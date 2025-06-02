@@ -28,8 +28,8 @@ e_voting/
 │   ├── utils.py       # Fungsi bantu: load_data, save_data
 │   ├── pemilih.py     # Tambah data pemilih
 │   ├── calon.py       # Tambah data calon ketua
-│   ├── voting.py      # Proses pemungutan suara dan validasi
-│   └── statistik.py   # Statistik partisipasi dan hasil perolehan suara
+│   ├── voting.py      # Proses pemungutan suara dan hasil perolehan suara
+│   └── statistik.py   # Statistik partisipasi
 │
 ├── data/
 │   ├── pemilih.json   # Data pemilih (list of dict)
