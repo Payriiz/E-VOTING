@@ -17,6 +17,8 @@ Menampilkan hasil perolehan suara dan statistik partisipasi pemilu.
 ---
 
 ## 🗂️ Struktur Proyek
+
+```plaintext
 e_voting/
 │
 ├── main.py            # Menu utama CLI
