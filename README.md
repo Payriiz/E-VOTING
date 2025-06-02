@@ -1,37 +1,36 @@
 # Simulasi E-Voting Pemilihan Ketua Organisasi Mahasiswa
 
-Sistem ini merupakan simulasi pemilu elektronik (e-voting) berbasis Python yang digunakan untuk memilih ketua organisasi mahasiswa. Sistem ini mencakup pencatatan data pemilih dan calon ketua, proses pemungutan suara, serta statistik hasil pemilu.
+Sistem ini merupakan simulasi pemilu elektronik (e-voting) berbasis Python yang digunakan untuk memilih ketua. Sistem ini mencakup pencatatan data pemilih dan calon ketua, proses pemungutan suara, serta statistik hasil pemilu.
 
 ---
 
-## 📌 Fitur Utama
+✨ Fitur Utama
+Manajemen Data Pemilih dan Calon Ketua
+Menambah dan menyimpan data pemilih serta calon dalam file .json.
 
-- **Manajemen Pemilih**  
-  Tambah pemilih baru dengan ID unik dan data jurusan.
+Pemungutan Suara (Voting)
+Validasi ID pemilih dan calon. Pemilih hanya dapat memilih satu kali.
 
-- **Manajemen Calon Ketua**  
-  Tambah calon ketua dengan data visi dan perhitungan suara otomatis.
-
-- **Pemungutan Suara (Voting)**  
-  Validasi ID pemilih dan calon. Pemilih hanya dapat memilih satu kali.
-
-- **Hasil Sementara dan Statistik**  
-  Menampilkan hasil perolehan suara dan statistik partisipasi pemilu.
+Hasil Sementara dan Statistik
+Menampilkan hasil perolehan suara dan statistik partisipasi pemilu.
 
 ---
 
 ## 🗂️ Struktur Proyek
-
-```plaintext
 e_voting/
-├── main.py # Menu utama CLI
+│
+├── main.py            # Menu utama CLI
+│
 ├── modul/
-│   ├── __init__.py
-│   ├── utils.py # Fungsi bantu: load_data, save_data
-│   ├── pemilih.py # Tambah pemilih
-│   ├── calon.py # Tambah calon ketua
-│   ├── voting.py # Proses pemungutan suara dan hasil
-│   └── statistik.py # Statistik partisipasi dan perolehan suara
-└── data/
-    ├── pemilih.json # Data pemilih (tersimpan sebagai list of dict)
-    └── calon.json # Data calon ketua
+│   ├── __pycache__/   # Cache Python otomatis
+│   ├── utils.py       # Fungsi bantu: load_data, save_data
+│   ├── pemilih.py     # Tambah data pemilih
+│   ├── calon.py       # Tambah data calon ketua
+│   ├── voting.py      # Proses pemungutan suara dan validasi
+│   └── statistik.py   # Statistik partisipasi dan hasil perolehan suara
+│
+├── data/
+│   ├── pemilih.json   # Data pemilih (list of dict)
+│   └── calon.json     # Data calon ketua
+│
+└── README.md          # Dokumentasi proyek
